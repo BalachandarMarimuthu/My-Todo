@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:id="@+id/content"
+    android:background="@color/black"
+    android:layout_margin="@dimen/_2sdp"
+    android:padding="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/check_box"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:animateLayoutChanges="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/check_box_tick" />
+
+    <TextView
+        android:id="@+id/todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/more"
+        android:layout_toEndOf="@+id/check_box"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:textColor="@color/appointment_light_grey_bg"
+        android:textSize="@dimen/_12sdp" />
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/_3sdp"
+        android:src="@drawable/delete" />
+</RelativeLayout>

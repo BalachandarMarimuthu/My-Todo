@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OurTodo</string>
+    <string name="add_item">Add Todo</string>
+    <string name="write_some">write something</string>
+    <string name="add">Add</string>
+    <string name="no_todo">No Todos found</string>
+</resources>

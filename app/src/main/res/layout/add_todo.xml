@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="@dimen/_10sdp"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/add_todo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_item"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp" />
+
+    <EditText
+        android:id="@+id/todo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_below="@+id/add_todo_title"
+        android:layout_marginLeft="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_18sdp"
+        android:background="@drawable/text_view"
+        android:gravity="start"
+        android:hint="@string/write_some"
+        android:inputType="text"
+        android:maxLines="3"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/app_grey_color"
+        android:textSize="@dimen/_9sdp"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/todo"
+        android:layout_marginLeft="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_18sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:text="@string/add"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
